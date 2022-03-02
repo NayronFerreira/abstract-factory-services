@@ -5,12 +5,12 @@ import model.entities.UserService;
 public class UserSOAPService extends UserService {
 
     @Override
-    public void save() {
-        System.out.println("Salvando o SOAP UserService!");
+    public void save(String name) {
+        System.out.println("Salvando o SOAP UserService! " + name);
     }
 
     @Override
-    public void delete() {
-        System.out.println("Deletando o SOAP UserService!");
+    public void delete(Integer id) {
+        System.out.println("Deletando o SOAP UserService! " + id);
     }
 }
